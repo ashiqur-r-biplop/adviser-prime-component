@@ -1,14 +1,8 @@
+
 h1 {
-  text-align: center;
+  color: white;
   -webkit-text-fill-color: transparent;
-  background-image: radial-gradient(
-      circle at 100% 100%,
-      #ff1c00,
-      #37007f9e 21%,
-      #fff0 43%
-    ),
-    radial-gradient(circle at 0 100%, #ff8000, #91cbfa 27%, #fff0 43%),
-    linear-gradient(#ffffd4, #ffffd4);
-    color: white;
-    
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: radial-gradient(circle at 100% 100%, #ff1c00, #37007f9e 21%, #fff0 43%), radial-gradient(circle at 0 100%, #ff8000, #91cbfa 27%, #fff0 43%), linear-gradient(#ffffd4, #ffffd4);
 }
