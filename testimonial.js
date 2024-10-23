@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
   const sliderContent = document.querySelector(".slider-content");
   const slides = document.querySelectorAll(".slide-card");
   const dots = document.querySelectorAll(".slider-dot");
@@ -125,4 +124,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSlideWidth();
   updateButtonColors(currentSlideIndex); // Initialize button colors
-});
