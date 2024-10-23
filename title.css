@@ -1,8 +1,92 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+body{
+  background-color: rgba(0, 0, 0, 0.908);
+}
+@font-face {
+  font-family: RockSalt;
+  src: url(./font/RockSalt.ttf);
+}
 h1 {
   color: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: radial-gradient(circle at 100% 100%, #ff1c00, #37007f9e 21%, #fff0 43%), radial-gradient(circle at 0 100%, #ff8000, #91cbfa 27%, #fff0 43%), linear-gradient(#ffffd4, #ffffd4);
+  display: inline-block;
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      #ffd700,
+      #f7edb4 21%,
+      #fff0 43%
+    ),
+    radial-gradient(circle at 0 100%, #ffd700, #f7edb4 27%, #00246695 43%),
+    linear-gradient(#ffffd4, #ffffd4);
+}
+h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-bottom: 0.2rem;
+  font-family: RockSalt, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  background-image: linear-gradient(36deg, #ffd700, #f7edb4 41%, #00246695);
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  text-align: center;
+}
+
+
+/* marquee */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.marquee-button {
+  color: black;
+  font-size: 20px;
+  position: relative;
+  max-width: 100% !important;
+  margin: auto;
+  height: 70px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.marquee-track-button {
+  position: absolute;
+  height: 100%;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 250s linear infinite;
+}
+.marquee-track-button-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  fill: none;
+  stroke: transparent;
+
+  stroke-width: 87;
+}
+.marquee-track-button-content li {
+  font-size: 42px;
+  list-style: none;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(36deg, #ffd700, #f7edb4 41%, #00246695);
+  font-family: "Montserrat", sans-serif;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
