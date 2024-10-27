@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-.sliders {
+.sliders-container-second {
   padding: 10px;
   overflow-x: hidden;
-
   border: 1px solid red;
 }
 
@@ -17,7 +16,7 @@
   gap: 20px;
 }
 
-.slide-card-seoncd {
+.slide-card-second {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -27,11 +26,9 @@
   gap: 10px;
   padding: 10px;
   box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
 }
 
-.slider-top {
+.slider-top-second {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,35 +36,35 @@
   padding-bottom: 10px;
 }
 
-.slider-card-and-title-group {
+.slider-card-and-title-group-second {
   display: flex;
   gap: 10px;
 }
 
-.slider-card-image {
+.slider-card-image-second {
   width: 50px;
   height: 50px;
 }
 
-.slider-card-image img {
+.slider-card-image-second img {
   width: 100%;
 }
 
-.slider-card-title {
+.slider-card-title-second {
   font-size: 20px;
   font-weight: 400;
   font-family: "Abel", sans-serif;
 }
 
-.slider-description {
+.slider-description-second {
   font-family: "Nunito", sans-serif;
 }
 
-.slider-icons-group i {
+.icons-group-second i {
   font-size: 14px;
 }
 
-.slider-dot-and-next-prev-button-group {
+.slider-dot-and-next-prev-button-group-second {
   width: 50%;
   margin-left: auto;
   display: flex;
@@ -78,18 +75,18 @@
   color: #e1be4a;
 }
 
-.slider-dot-group {
+.slider-dot-group-second {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
 }
 
-.slider-dot.active {
+.slider-dot-second.active {
   background-color: #e1be4a !important;
 }
 
-.slider-dot {
+.slider-dot-second {
   background-color: #cbcbcb;
   width: 10px;
   height: 10px;
@@ -100,7 +97,7 @@
   cursor: pointer;
 }
 
-.slider-dot::before {
+.slider-dot-second::before {
   content: "";
   position: absolute;
   top: 32px;
@@ -110,14 +107,14 @@
   border-radius: 100%;
 }
 
-.next-prev-button-group {
+.next-prev-button-group-second {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.next-prev-button-group button {
+.next-prev-button-group-second button {
   border: none;
   width: 45px;
   height: 45px;
@@ -125,33 +122,34 @@
   cursor: pointer;
 }
 
-.next {
+.next-second {
   color: white;
   background-color: #e1be4a;
 }
 
-.prev {
+.prev-second {
   color: white;
   background-color: #222020;
 }
 
 @media (max-width: 550px) {
-  .container {
+  .container-second {
     padding: 10px;
   }
 }
+
 @media screen and (min-width: 0px) and (max-width: 520px) {
-  .slider-dot-and-next-prev-button-group {
+  .slider-dot-and-next-prev-button-group-second {
     width: 100%;
     flex-direction: column;
     gap: 20px;
   }
-  .slider-dot {
+  .slider-dot-second {
     background-color: #cbcbcb;
     width: 8px;
     height: 8px;
   }
-  .slider-dot::before {
+  .slider-dot-second::before {
     content: "";
     position: absolute;
     top: 14px;
@@ -160,7 +158,7 @@
     border: 1px solid #cbcbcb;
     border-radius: 100%;
   }
-  .next-prev-button-group button {
+  .next-prev-button-group-second button {
     border: none;
     width: 35px;
     height: 35px;
